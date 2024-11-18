@@ -1,0 +1,70 @@
+/* Estilos generales de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #6a0dad; /* Fondo morado */
+}
+
+/* Estilos de la tarjeta */
+.card {
+    background-color: #d8b4f1; /* Fondo de la tarjeta lila */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6a0dad;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5c0e9b;  /* Color ligeramente más oscuro */
+    transform: scale(1.05); /* Efecto de agrandar ligeramente al hacer hover */
+}
+
+button:disabled {
+    background-color: #ccc; /* Color gris cuando el botón está deshabilitado */
+    cursor: not-allowed;  /* Cambia el cursor para indicar que está deshabilitado */
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333;
+}
