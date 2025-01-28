@@ -50,8 +50,8 @@ def iniciar_chrome():
     driver = webdriver.Chrome(service=s, options=options)
     return driver
 
-def login_instagram(driver, wait):
-    if os.path.isfile("instagram1.cookies"):
+def login_instagram(driver, wait):   
+    if os.path.isfile("instagram1.cookies"):  
         with open("instagram1.cookies", "rb") as file:
             cookies = pickle.load(file)
         driver.get("https://www.instagram.com/robots.txt")
@@ -92,7 +92,7 @@ def descargar_fotos_instagram(driver, hashtag, minimo,wait):
     print(f'Buscando por hashtag #{hashtag}')
     driver.get(f'https://www.instagram.com/explore/tags/{hashtag}')
     
-    url_fotos = set()
+    url_fotos = set() 
     fotos_info = []
     scrolls = 0
     MAX_SCROLLS = 10  
@@ -104,13 +104,14 @@ def descargar_fotos_instagram(driver, hashtag, minimo,wait):
         elementos = WebDriverWait(driver, 10).until(
             ec.presence_of_all_elements_located((By.CSS_SELECTOR, "img"))
         )
-
+  
         for elemento in elementos:
             try:
                 url = elemento.get_attribute("src")
                 if url and url not in url_fotos:
                     url_fotos.add(url)
                     fecha = "Calmao"  # Esto es un ejemplo
+                    
                     likes = np.random.randint(10000, 100000)  # NUMEROS MIENTRAS HAGO QUE FUNCIONE
                     fotos_info.append({'URL': url, 'Fecha': fecha, 'Me Gusta': likes})
             except Exception as e:
