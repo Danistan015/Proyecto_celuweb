@@ -1,6 +1,6 @@
 # Instagram Scraper 🖼️
 
-Este proyecto es una aplicación que combina **Selenium** y **Flask** para realizar scraping de fotos en Instagram basado en un hashtag. Con esta herramienta puedes descargar imágenes, guardar sus datos en un archivo CSV y obtener estadísticas como el promedio de "Me Gusta". 🚀
+Este proyecto es una aplicación que combina **Selenium** y **Flask** para realizar scraping de fotos en Instagram basado en un hashtag. Con esta herramienta puedes descargar imágenes, guardar sus datos en un archivo CSV y obtener estadísticas como el promedio de "Me Gusta" (esta funcionalidad aun no esta completa). 🚀
 
 ---
 
